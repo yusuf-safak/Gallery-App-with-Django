@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home
+{% endblock %}
+{% block content %}
+    {% for img in images %}
+        <a href="detail/{{img.id}}"><img src="{{img.image.url}}"></a>
+        <br>
+    {% endfor %}
+{% endblock %}

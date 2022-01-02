@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <header>
+        {% if not request.user.is_authenticated %}
+        <div class="membership">
+            <li><a href="/login/">Login</a></li>
+            <li><a href="/signup/">Sign up!</a></li>
+        </div>    
+        {% else %}
+        <div class="membership" style="margin-left: 63%;">
+            <li><a href="/logout/">Logout</a></li>
+            <li><a href="/images/create">Add New Image</a></li>
+        </div>
+        {% endif %}
+    </header>
+    <div class="container">
+        <nav>
+            <li><a href="/">Home</a></li>
+            <li><a href="/images/">Gallery</a></li>
+        </nav>
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    <div class="footer" align="center">
+        <p>
+            Yusuf Şafak || All rights reserved..!
+        </p>
+    </div>
+</body>
+</html>

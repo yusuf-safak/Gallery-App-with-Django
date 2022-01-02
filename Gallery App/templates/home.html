@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home
+{% endblock %}
+{% block content %}
+    <h3>My Gallery App</h3>
+    <p class="homeP">
+        This is the home page of my gallery app. I developed this application using 
+        django. You can add a new image from the Add New Image button. I used django's 
+        form model in the image insertion area. I also included the ck editor application 
+        in my project to enter the description text. After adding, you can click on the 
+        gallery button and see that the picture is listed on that page. When you click on 
+        the picture, you will go to the detail page. The detail page has a picture, title, 
+        description, publication date and delete button. When you click on the delete button, 
+        you will notice that the picture has been deleted from your gallery.
+    </p>
+    <br>
+    <a href="/images/">Go to Gallery</a>
+{% endblock %}

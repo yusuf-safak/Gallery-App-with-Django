@@ -1,0 +1,153 @@
+body
+{
+    font-size: 16px;
+    font-family: arial;
+}
+header .membership
+{
+    width: 40%;
+    margin-left: 75%;
+}
+header .membership li
+{
+    display: inline;
+    padding-right: 10px;
+}
+header .membership li a
+{
+    text-decoration: none;
+    background-color: red;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+header .membership li a:hover
+{
+    color:purple;
+    background-color: orange;
+}
+.container .content
+{
+    background-color: gray;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container nav
+{
+    background-color: teal;
+    height: 60px;
+    padding-top: 35px;
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+.container nav li
+{
+    list-style: none;
+    display: inline;
+    padding-right: 20px;
+}
+.container nav li a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.4s;
+}
+.container nav li a:hover
+{
+    color: purple;
+    background-color: orange;
+}
+.container
+{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container a img
+{
+    transition: 0.4s;
+    width: 300px;
+    height: 175px;
+}
+.container a img:hover
+{
+    width: 350px;
+    height: 225px;
+}
+.container a
+{
+    text-decoration: none;
+    color:purple;
+}
+.container .homeP
+{
+    border: 7px solid gold;
+    font-size: 18px;
+    background-color: teal;
+    width: 500px;
+    margin: 0 auto 0 auto;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+}
+.container p
+{
+    width: 500px;
+    margin: 0 auto 0 auto;
+}
+.container a button , .content input[type="submit"] 
+{
+    background-color: teal;
+    color:gold;
+    border-radius: 15px;
+    padding:5px;
+    margin-bottom: 10px;
+}
+.container form
+{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.container input
+{
+    padding:10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: lightgreen;
+    opacity: 60%;
+}
+.container form input[type="submit"]
+{
+    background-color: teal;
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.4s;
+}
+.container form input[type="submit"]:hover
+{
+    background-color: red;
+    color: white;
+}
+.footer
+{
+    margin-top: 20px;
+    background-color: teal;
+    color: white;
+    margin: 0 auto 0 auto;
+    width: 70%;
+    padding: 5px;
+    font-weight: bold;
+}
